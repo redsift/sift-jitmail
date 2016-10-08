@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%">
+
+<head>
+  <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Timely Mail Sift</title>
+  <meta name="description" content="Email smarter.">
+  <meta name="author" content="Randal Pinto <randal@redsift.io>">
+  <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="dist/css/email.min.css">
+</head>
+
+<body id="home" style="height:100%">
+
+  <div id="signin" class="fullheight__column--centered view" style="display: none;">
+    <p>Please sign in</p>
+    <button class="google-signin" id="google-signin"></button>
+  </div>
+  <div id="loader" class="fullheight__column--centered view">
+    <div id="loading"></div>
+  </div>
+  <div id="snoozed-display" class="fullheight__column--centered view" style="display: none;">
+    <div class="clock__container--snoozed">
+      <div class="time--snoozed">
+        <code id="snoozedtime">-</code>
+        <p id="snoozeddate">-</p>
+      </div>
+      <div id="snoozedclock"></div>
+    </div>
+  </div>
+  <div id="snoozer" class="fullheight__column--centered view" style="display: none;">
+    <div class="clock__container">
+      <div class="time">
+        <code id="snoozetime">-</code>
+        <p id="snoozedate">Select time</p>
+      </div>
+      <div id="snoozeclock"></div>
+    </div>
+    <div class="fullwidth__row--centered">
+      <div id="precision" class="precisionselector">
+        <input type="radio" id="minutes" name="radios">
+        <label for="minutes">Minutes</label>
+        <input type="radio" id="hours" name="radios" checked>
+        <label for="hours">Hours&nbsp;</label>
+        <input type="radio" id="days" name="radios">
+        <label for="days">Days</label>
+      </div>
+    </div>
+    <input id="slider" type="range" value="0" min="0" max="24"/>
+    <button id="snooze-button" class="snoozebutton" disabled>Snooze</button>
+  </div>
+
+  <!-- View implementation -->
+  <script src="dist/js/email-thread.umd-es2015.js"></script>
+
+</body>
+
+</html>

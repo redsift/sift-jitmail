@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%">
+
+<head>
+  <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Timely Mail Sift</title>
+  <meta name="description" content="Email smarter.">
+  <meta name="author" content="Randal Pinto <randal@redsift.io>">
+  <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" type="text/css" href="dist/css/summary.min.css">
+</head>
+
+<body id="home">
+
+  <rs-hero header="Timely Mail Sift" bg-class="-bg-jitmail -effect-darken" scroll-target="#scroll-target" sticky-header=".content">
+    <img src="assets/hero-icon.svg" style="width: 100px; height: 100px;">
+    <br>
+    <br>
+    <code id="total">0</code>
+    <p id="hero-tagline" class="fade-in delay">Emails waiting for the right time to make their entrance</p>
+  </rs-hero>
+  <a id="help" class="help" href="#">
+    <img src="assets/help.svg" style="position: fixed; top: 30px; right: 20px; z-index: 800;" />
+  </a>
+
+  <div class="content" id="scroll-target">
+    <div class="container">
+      <div id="signin" class="column--centered view" style="display: none; min-height: 200px;">
+        <button class="google-signin" id="google-signin" style="margin-bottom: 20px;"></button>
+        <p class="signin-description">Sign in to connect your Gmail account and make your email Timely</p>
+      </div>
+      <div id="loader" class="column--centered view" style="min-height: 200px;">
+        <div id="loading"></div>
+      </div>
+      <div id="calendar" class="calendar view" style="display: none;">
+        <div class="calendar__section cs--first">
+          <div class="calendar__title">
+            <p class="calendar__name">Snoozed Emails</p>
+            <button class="goto__button" id="goto-snoozed">View</button>
+          </div>
+          <div class="calendar__row--centered">
+            <div id="snoozedcal"></div>
+          </div>
+        </div>
+        <div class="calendar__section cs--last">
+          <div class="calendar__title">
+            <p class="calendar__name">Send Later Emails</p>
+            <button class="goto__button" id="goto-sendlater">View</button>
+          </div>
+          <div class="calendar__row--centered">
+            <div id="sendlatercal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- View implementation -->
+  <script src="dist/js/summary.umd-es2015.js"></script>
+
+</body>
+
+</html>

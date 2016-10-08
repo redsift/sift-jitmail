@@ -1,0 +1,14 @@
+{
+  "name": "sift-jitmail",
+  "display-name": "Timely Mail",
+  "description": "",
+  "author": "Randal Pinto",
+  "version": "1.0.0",
+  "#": "Please use 'redsift npm' instead of system 'npm' ",
+  "dependencies": {
+    "google-auth-library": "0.9.8",
+    "googleapis": "12.0.0",
+    "moment": "2.14.1",
+    "request-promise": "4.1.0"
+  }
+}

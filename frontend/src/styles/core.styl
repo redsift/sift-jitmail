@@ -1,0 +1,56 @@
+/**
+ * Core styles shared between views
+ */
+
+body
+  overflow-x: hidden
+
+button.google-signin
+  border: 0px
+  padding: 0px
+  background-color: white
+  width: 191px
+  height: 46px
+  background-image: url('../../assets/google-signin/1x/btn_google_signin_light_normal_web.png')
+  background-image: -webkit-image-set(
+      url('../../assets/google-signin/1x/btn_google_signin_light_normal_web.png') 1x,
+      url('../../assets/google-signin/2x/btn_google_signin_light_normal_web@2x.png') 2x
+  )
+
+button.google-signin:hover
+  background-image: url('../../assets/google-signin/1x/btn_google_signin_light_focus_web.png')
+  background-image: -webkit-image-set(
+      url('../../assets/google-signin/1x/btn_google_signin_light_focus_web.png') 1x,
+      url('../../assets/google-signin/2x/btn_google_signin_light_focus_web@2x.png') 2x
+  )
+
+button.google-signin:active
+  background-image: url('../../assets/google-signin/1x/btn_google_signin_light_pressed_web.png')
+  background-image: -webkit-image-set(
+      url('../../assets/google-signin/1x/btn_google_signin_light_pressed_web.png') 1x,
+      url('../../assets/google-signin/2x/btn_google_signin_light_pressed_web@2x.png') 2x
+  )
+
+.fullheight__column--centered
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.column--centered
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100%
+
+.fullwidth__row--centered
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: center
+
+@media (max-height: 230px)
+  body
+    overflow-y: hidden

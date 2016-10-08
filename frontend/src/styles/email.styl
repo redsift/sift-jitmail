@@ -1,0 +1,178 @@
+@import '@redsift/ui-rs-core/dist/css/ui-rs-core.min.css'
+@import 'core'
+
+/**
+ * Styles for the email-thread and email-compose views
+ */
+.precisionselector
+  display: flex
+  align-content: center
+  justify-content: center
+  margin-top: 4px
+
+.clock__container--snoozed
+  width: 160px
+  height: 160px
+
+.clock__container
+  width: 132px
+  height: 132px
+
+.time--snoozed
+  position: absolute
+  width: 100%
+  left: 0
+  right: 0
+  margin-top: 54px
+  text-align: center
+
+.time
+  position: absolute
+  width: 100%
+  left: 0
+  right: 0
+  margin-top: 42px
+  text-align: center
+
+.time--snoozed p,
+.time p
+  font-size: 1rem
+  line-height: 0px
+  margin-top: 8px
+
+.snoozedtime,
+.sendtime
+  color: #7F7F7F
+  font-size: 14px
+
+.snoozebutton,
+.sendbutton
+  font-size: 0.75rem
+  margin-top: 4px
+  padding-top: 8px
+  padding-bottom: 8px
+
+.snoozebutton::before,
+.sendbutton::before
+  box-shadow: inset 0 0 0 0 #07AF2D
+
+.snoozebutton:enabled,
+.sendbutton:enabled
+  transition: all 800ms ease
+  box-shadow: inset 200px 0 0 0 #07AF2D
+  border: 1px solid #07AF2D
+  color: white
+
+.snoozetime
+  color: #7F7F7F
+  font-size: 14px
+  margin-top: 8px
+  padding: 16px 8px 16px 8px
+  border: 1px solid #ccc
+
+/*
+* Toggle radio button
+*/
+input[type=radio]
+  display: none
+
+input[type=radio] + label
+  display: inline-block
+  margin: -2px
+  padding: 1px 16px
+  margin-bottom: 0
+  font-size: 11px
+  font-family: Electrolize,sans-serif
+  font-weight: 400
+  line-height: 20px
+  color: #7F7F7F
+  text-align: center
+  vertical-align: middle
+  cursor: pointer
+
+input[type=radio]:checked + label
+  color: #FCBB54
+
+/*
+* Range selector
+*/
+input[type=range]
+  -webkit-appearance: none
+  width: 80%
+  height: 0px
+  margin: 0px
+
+input[type=range]:focus
+  outline: none
+  box-shadow: none
+
+input[type=range]::-webkit-slider-runnable-track
+  width: 80%
+  height: 0px
+  cursor: pointer
+  background: #fcbb54
+  border-radius: 0px
+  border: 1px solid #fcbb54
+
+input[type=range]::-webkit-slider-thumb
+  box-shadow: 0px 0px 0px #ffffff, 0px 0px 0px #ffffff
+  border: 1px solid #fcbb54
+  height: 12px
+  width: 12px
+  border-radius: 6px
+  background: #ffffff
+  cursor: pointer
+  -webkit-appearance: none
+  margin-top: -6px
+
+input[type=range]:focus::-webkit-slider-runnable-track
+  background: #fcc56d
+
+input[type=range]::-moz-range-track
+  width: 80%
+  height: 0px
+  cursor: pointer
+  background: #fcbb54
+  border-radius: 0px
+  border: 1px solid #fcbb54
+
+input[type=range]::-moz-range-thumb
+  border: 1px solid #fcbb54
+  height: 12px
+  width: 12px
+  border-radius: 6px
+  background: #ffffff
+  cursor: pointer
+
+input[type=range]::-ms-track
+  width: 80%
+  height: 0px
+  cursor: pointer
+  background: transparent
+  border-color: transparent
+  color: transparent
+
+input[type=range]::-ms-fill-lower
+  background: #fcb13b
+  border: 1px solid #fcbb54
+  border-radius: 0px
+
+input[type=range]::-ms-fill-upper
+  background: #fcbb54
+  border: 1px solid #fcbb54
+  border-radius: 0px
+
+input[type=range]::-ms-thumb
+  border: 1px solid #fcbb54
+  height: 12px
+  width: 12px
+  border-radius: 6px
+  background: #ffffff
+  cursor: pointer
+  height: 0px
+
+input[type=range]:focus::-ms-fill-lower
+  background: #fcbb54
+
+input[type=range]:focus::-ms-fill-upper
+  background: #fcc56d

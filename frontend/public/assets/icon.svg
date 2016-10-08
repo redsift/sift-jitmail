@@ -1,0 +1,26 @@
+<svg id="group-271" xmlns="http://www.w3.org/2000/svg" viewBox="-3855 -9925 108 108">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ed9200;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="group-268" transform="translate(-1380 1773)">
+    <g id="group-257" transform="translate(-3596 -12660)">
+      <g id="home-buyer-sift-icon" transform="translate(1121 962)">
+        <path id="path" class="cls-1" d="M108,84.96,85.158,108l-62.15-.28L0,84.957l.17-62.2L22.742.114,85.158,0,108,22.76Z"/>
+      </g>
+    </g>
+    <g id="group-267" transform="translate(-135.814 3.186)">
+      <path id="path-110" class="cls-2" d="M.24,70.629H0V66.121H.241a30.808,30.808,0,1,0,0-61.616H0V0H.24a35.315,35.315,0,1,1,0,70.629Z" transform="translate(-2285.144 -11682)"/>
+      <path id="path-110-2" data-name="path-110" class="cls-2" d="M.24,70.629H0V66.121H.241a30.808,30.808,0,1,0,0-61.616H0V0H.24a35.315,35.315,0,1,1,0,70.629Z" transform="translate(-2249.371 -11647.145) rotate(90)"/>
+      <path id="path-110-3" data-name="path-110" class="cls-2" d="M.175,51.567H0V47.358H.176a21.576,21.576,0,1,0,0-43.151H0V0H.175a25.784,25.784,0,1,1,0,51.567Z" transform="translate(-2284.903 -11672.471)"/>
+      <path id="path-122" class="cls-2" d="M15.936,16.143A16,16,0,0,1,0,.108V0H4.337A12.017,12.017,0,0,0,16.166,11.625v4.517Z" transform="translate(-2268.979 -11647.558) rotate(180)"/>
+    </g>
+  </g>
+</svg>
