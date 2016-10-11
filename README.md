@@ -1,7 +1,7 @@
 # Timely Mail Sift
 ### Emails when you need them
 
-[<img src="http://static.redsift.io/assets/icons/deploy.svg">](https://dashboard.redsift.cloud/catalogue)
+[<img src="http://static.redsift.io/assets/icons/run.svg">](https://dashboard.redsift.cloud/catalogue)
 
 Email smarter. With the Timely Mail Sift you can schedule emails to be sent at a specific time and clear your inbox by scheduling emails to be brought back to your inbox when you want to deal with them.
 
