@@ -1,10 +1,9 @@
 {
   "name": "sift-jitmail",
   "version": "1.0.0",
-  "description": "## Development setup",
-  "main": "bundle.config.js",
+  "description": "FindTime Sift",
   "scripts": {
-    "build": "gulp build",
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
