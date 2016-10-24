@@ -2,7 +2,7 @@
    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
    typeof define === 'function' && define.amd ? define(factory) :
    (global.SiftJITMail = factory());
-}(this, (function () { 'use strict';
+}(this, (function () {
 
 var xhtml = "http://www.w3.org/1999/xhtml";
 
@@ -2768,7 +2768,7 @@ Path.prototype = path.prototype = {
     }
 
     // Or, is (x1,y1) coincident with (x0,y0)? Do nothing.
-    else if (!(l01_2 > epsilon));
+    else if (!(l01_2 > epsilon)) {}
 
     // Or, are (x0,y0), (x1,y1) and (x2,y2) collinear?
     // Equivalently, is (x1,y1) coincident with (x2,y2)?
@@ -3452,7 +3452,7 @@ CatmullRom.prototype = {
   lineEnd: function() {
     switch (this._point) {
       case 2: this._context.lineTo(this._x2, this._y2); break;
-      case 3: this.point(this, this._x2, this._y2); break;
+      case 3: this.point(this._x2, this._y2); break;
     }
     if (this._line || (this._line !== 0 && this._point === 1)) this._context.closePath();
     this._line = 1 - this._line;

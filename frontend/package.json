@@ -1,10 +1,9 @@
 {
   "name": "sift-jitmail",
-  "version": "1.0.0",
-  "description": "## Development setup",
-  "main": "bundle.config.js",
+  "version": "1.0.1",
+  "description": "Timely Mail Sift",
   "scripts": {
-    "build": "gulp build",
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +19,7 @@
   "dependencies": {},
   "devDependencies": {
     "@redsift/sift-sdk-web": "^0.6.1",
-    "@redsift/redsift-bundler": "^0.5.3",
+    "@redsift/redsift-bundler": "^0.5.5",
     "@redsift/ui-rs-hero": "^0.3.1",
     "@redsift/ui-rs-core": "^0.8.3",
     "@redsift/d3-rs-squares": "^0.7.1",
