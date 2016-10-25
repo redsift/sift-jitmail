@@ -20,15 +20,15 @@
   "devDependencies": {
     "@redsift/sift-sdk-web": "^0.6.1",
     "@redsift/redsift-bundler": "^0.5.5",
-    "@redsift/ui-rs-hero": "^0.3.1",
-    "@redsift/ui-rs-core": "^0.8.3",
+    "@redsift/ui-rs-hero": "^0.3.3",
+    "@redsift/ui-rs-core": "^0.8.10",
     "@redsift/d3-rs-squares": "^0.7.1",
     "@redsift/d3-rs-tip": "^0.3.3",
     "@redsift/d3-rs-polars": "^0.0.2",
     "d3-selection": "^1.0.2",
-    "d3-transition": "^1.0.2",
+    "d3-transition": "^1.0.3",
     "gulp": "^3.9.1",
-    "moment": "^2.15.1",
+    "moment": "^2.15.2",
     "oauthio-web": "^0.5.2",
     "tingle.js": "^0.8.1"
   }
