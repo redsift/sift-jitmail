@@ -14,13 +14,16 @@ var PromiseFlattener = require('./common/promiseflattener.js');
 module.exports = function (got) {
   const inData = got['in'];
   const lookupData = got['lookup'];
-  var credentials = {};
+  var credentials = null;
 
   // Fetch Google API credentials
-  if (lookupData[0].data && lookupData[0].data.value) {
+  try{
     credentials = JSON.parse(lookupData[0].data.value);
+  }catch(e){
+    console.warn('wakeup.js: no google credentials provided yet.', e);
+    return { name: 'state', key: 'auth', value: { valid: false, error: 'please sign in with Google' } };
   }
-  else {
+  if (!credentials)
     console.warn('wakeup.js: no google credentials provided yet.');
     return { name: 'state', key: 'auth', value: { valid: false, error: 'please sign in with Google' } };
   }
