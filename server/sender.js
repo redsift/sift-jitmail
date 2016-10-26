@@ -22,7 +22,7 @@ module.exports = function (got) {
     console.warn('sender.js: no google credentials provided yet.', e);
     return { name: 'state', key: 'auth', value: { valid: false, error: 'please sign in with Google' } };
   }
-  if (!credentials)
+  if (!credentials){
     console.warn('sender.js: no google credentials provided yet.');
     return { name: 'state', key: 'auth', value: { valid: false, error: 'please sign in with Google' } };
   }
