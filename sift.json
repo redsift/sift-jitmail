@@ -137,7 +137,8 @@
           "snoozed": {
             "ttl": 30
           },
-          "threads": {}
+          "threads": {},
+          "state": {}
         }
       },
       {
@@ -197,7 +198,8 @@
             "ttl": 30
           },
           "threads": {},
-          "messages": {}
+          "messages": {},
+          "state": {}
         }
       },
       {

@@ -17,13 +17,13 @@ module.exports = function (got) {
   var credentials = null;
 
   // Fetch Google API credentials
-  try{
+  try {
     credentials = JSON.parse(lookupData[0].data.value);
-  }catch(e){
+  } catch (e) {
     console.warn('snooze.js: no google credentials provided yet.', e);
     return { name: 'state', key: 'auth', value: { valid: false, error: 'please sign in with Google' } };
   }
-  if (!credentials){
+  if (!credentials) {
     console.warn('snooze.js: no google credentials provided yet.');
     return { name: 'state', key: 'auth', value: { valid: false, error: 'please sign in with Google' } };
   }
